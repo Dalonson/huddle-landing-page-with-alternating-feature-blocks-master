@@ -11,6 +11,7 @@ $paleCyan: hsl(193, 100%, 96%);
 $paleCyan1: hsl(193, 100%, 99%);
 $darkCyan: hsl(192, 100%, 9%);
 $grayBlue: hsl(208, 11%, 55%);
+$footerGray: #e9ecef92;
 
 * {
   margin: 0;
@@ -47,6 +48,9 @@ body {
       font-weight: 700;
       box-shadow: 0 0 8px 2px #dee2e690;
     }
+    .nav-btn:hover {
+      background: #f8f9fa;
+    }
   }
   .hero {
     display: flex;
@@ -79,6 +83,11 @@ body {
         text-decoration: none;
         background: $pink;
         border-radius: 50rem;
+        transition: all 0.5s;
+        font-weight: 600;
+      }
+      .hero-btn:hover {
+        background: hsla(322, 100%, 66%, 0.625);
       }
     }
     .hero-img-box {
@@ -96,7 +105,7 @@ body {
   flex-direction: column;
   margin: 0 4rem;
   gap: 3rem;
-  padding-top: 9rem;
+  padding-top: 6rem;
   .benefit-box {
     display: flex;
     justify-content: center;
@@ -139,4 +148,101 @@ body {
   .grow-box {
     margin-right: 6rem;
   }
+}
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  color: $darkCyan;
+  margin: 4rem 18rem -6rem;
+  padding: 2rem 6rem;
+  box-shadow: 0 0 8px 2px #dee2e690;
+  background: #fff;
+  border-radius: 1rem;
+
+  .cta-title {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    font-weight: 900;
+  }
+  .cta-btn {
+    color: $paleCyan1;
+    background: $pink;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 50rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+  .cta-btn:hover {
+    background: hsla(322, 100%, 66%, 0.625);
+  }
+}
+
+.footer {
+  background: $darkCyan;
+  padding: 12rem 4rem 6rem 4rem;
+  color: #fff;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-logo {
+    fill: white;
+    margin-bottom: 2rem;
+  }
+  ul {
+    list-style: none;
+  }
+  .contact-list {
+    display: flex;
+    margin-bottom: 2rem;
+    color: $footerGray;
+  }
+  .footer-icon {
+    margin-right: 2rem;
+    height: 1.2rem;
+  }
+  .location-text {
+    width: 20rem;
+    padding-left: 0.5rem;
+    color: $footerGray;
+    line-height: 1.5;
+  }
+  .footer-col {
+    margin-top: 4.5rem;
+  }
+  .footer-link {
+    padding-bottom: 1.5rem;
+  }
+  .footer-socials {
+    margin-top: 4.5rem;
+  }
+  .social-icons {
+    display: flex;
+    column-gap: 1rem;
+  }
+  .social-icon:hover {
+    color: $pink;
+    border: 1px solid $pink;
+  }
+  .social-icon {
+    color: $footerGray;
+    border: 1px solid $paleCyan1;
+    padding: 0.3rem;
+    border-radius: 50rem;
+  }
+  a {
+    text-decoration: none;
+    color: $footerGray;
+  }
+}
+.copyright-box {
+  text-align: end;
+  margin-top: 2rem;
+  color: $footerGray;
 }
